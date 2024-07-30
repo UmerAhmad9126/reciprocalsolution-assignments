@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL: "https://reciprocalsolution-assignments.onrender.com", 
+    baseURL: "https://reciprocalsolution-assignments-1.onrender.com",
 });
 
 console.log("in api connector");

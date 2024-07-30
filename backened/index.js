@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-
+ 
 const database = require("./config/database");
 const cookieParser = require('cookie-parser');
 const cors = require('cors'); //backened entertain the front request
-const userRoutes = require("./routes/User")
-const todoRoutes = require("./routes/todoRoutes/Todo")
-
+const userRoutes=require("./routes/User")
+const todoRoutes=require("./routes/todoRoutes/Todo")
+ 
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -20,17 +20,17 @@ app.use(cookieParser());
 
 app.use(
     cors({
-        origin: 'https://frontened-1kkqezkmr-umerahmad9126s-projects.vercel.app',
+        origin: 'https://frontened-pjhgz24i0-umerahmad9126s-projects.vercel.app',
         credentials: true,
     })
 )
 
-
+ 
 
 //routes
 app.use(userRoutes);
 app.use(todoRoutes);
-
+ 
 
 
 //default route
