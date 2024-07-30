@@ -20,7 +20,7 @@ app.use(cookieParser());
 
 app.use(
     cors({
-        origin: 'https://frontened-pjhgz24i0-umerahmad9126s-projects.vercel.app/',
+        origin: 'https://frontened-1kkqezkmr-umerahmad9126s-projects.vercel.app',
         credentials: true,
     })
 )
